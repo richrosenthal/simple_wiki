@@ -30,4 +30,5 @@ end
 
 post "/create" do
   save_content(params["title"], params["content"])
+  redirect "/#{params["title"]}"
 end
