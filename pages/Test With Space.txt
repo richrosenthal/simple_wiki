@@ -1,0 +1,1 @@
+Testing the URI method to make sure URL is encoded automatically. 
