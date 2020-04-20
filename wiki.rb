@@ -27,3 +27,7 @@ get "/:title" do
   @content = page_content(@title)
   erb :show
 end
+
+post "/create" do
+  'Hello from the post "/create" route!'
+end
