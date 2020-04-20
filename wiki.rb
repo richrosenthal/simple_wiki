@@ -39,3 +39,8 @@ post "/create" do
   save_content(params["title"], params["content"])
   redirect URI.escape("/#{params["title"]}")
 end
+
+put "/:title" do
+  save_content(params["title"], params["content"])
+  redirect URI.escape("/#{{params["title"]}}")
+end
