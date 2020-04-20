@@ -48,3 +48,8 @@ put "/:title" do
   save_content(params["title"], params["content"])
   redirect URI.escape("/#{params["title"]}")
 end
+
+delete "/:title" do
+  delete_content(params[:title])
+  redirect "/"
+end
